@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Apple TV</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="//unpkg.com/apple-tv-card@latest/dist/main.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="app.css" rel="stylesheet">
+    <script src="//unpkg.com/muuri/dist/muuri.min.js"></script>
+    <script src="//unpkg.com/apple-tv-card@latest/dist/main.js" defer></script>
+
+    <!-- Font Awesome -->
+    <script src="//unpkg.com/@fortawesome/fontawesome-free/js/regular.min.js"></script>
+    <script src="//unpkg.com/@fortawesome/fontawesome-free/js/brands.min.js"></script>
+    <script src="//unpkg.com/@fortawesome/fontawesome-free/js/fontawesome.min.js"></script>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Alpine Stuff -->
+    <script defer src="https://unpkg.com/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body x-data x-trap="true">
+<div class="p-[2vw]">
+    <div class="flex">
+        <div class="w-1/2 px-[1vw]">
+            <div class="apple-tv-card-container">
+                <div class="apple-tv-card">
+                    <a href="https://www.mtv.fi/ohjelma/e7f959c4b762e341d082/suurmestari" class="content" target="_blank"
+                       style="background-image:url(suurmestari.jpg);background-size:cover;padding-bottom:56.25%;"></a>
+                </div>
+                <div class="apple-tv-card-title">
+                    Suurmestari
+                </div>
+            </div>
+        </div>
+        <div class="w-1/2 px-[1vw]">
+            <div class="apple-tv-card-container">
+                <div class="apple-tv-card">
+                    <a href="https://www.ruutu.fi/ohjelmat/suomen-huutokauppakeisari" class="content" target="_blank"
+                       style="background-image:url(huutokauppakeisari.jpg);background-size:cover;padding-bottom:56.25%;"></a>
+                </div>
+                <div class="apple-tv-card-title">
+                    Suomen huutokauppakeisari
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header">
+    <div class="grid">
+        <div class="item">
+            <div class="item-content">
+                <div class="apple-tv-card-container">
+                    <div class="apple-tv-card with-shadow">
+                        <a href="https://www.youtube.com/" class="content" target="_blank"
+                           style="background:white"></a>
+                        <div class="parallax-content"
+                             style="background:url(YouTube-Logo.png) no-repeat center center;background-size:83% auto;"></div>
+                    </div>
+                    <div class="apple-tv-card-title">
+                        YouTube
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-content">
+                <div class="apple-tv-card-container">
+                    <div class="apple-tv-card">
+                        <a href="https://www.mtv.fi/" class="content" target="_blank"
+                           style="background:linear-gradient(to bottom, #444, #111)"></a>
+                        <div class="parallax-content"
+                             style="background:url(MTV_Katsomo_2023.svg.png) no-repeat center center;background-size:40% auto;"></div>
+                    </div>
+                    <div class="apple-tv-card-title">
+                        MTV Katsomo
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-content">
+                <div class="apple-tv-card-container">
+                    <div class="apple-tv-card">
+                        <a href="https://www.ruutu.fi/" target="_blank" class="content" style="background:linear-gradient(to bottom, rgb(0, 47, 99), rgb(0,18,35));"></a>
+                        <div class="parallax-content"
+                             style="background:url(Ruutu_color_RGB.png) no-repeat center center;background-size:70% auto;"></div>
+                    </div>
+                    <div class="apple-tv-card-title">
+                        Ruutu
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-content">
+                <div class="apple-tv-card-container">
+                    <div class="apple-tv-card">
+                        <a href="https://areena.yle.fi/" target="_blank" class="content" style="background: rgb(20,20,22)"></a>
+                        <div class="parallax-content"
+                             style="background:url(areena-etusivu-somejako.jpg) no-repeat center center;background-size:90% auto;"></div>
+                    </div>
+                    <div class="apple-tv-card-title">
+                        Yle Areena
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-content">
+                <div class="apple-tv-card-container">
+                    <div class="apple-tv-card">
+                        <a href="https://music.youtube.com/" target="_blank" class="content"
+                           style="background:white;"></a>
+                        <div class="parallax-content"
+                             style="background:url(YT_Music.svg.png) no-repeat center center;background-size:80% auto;"></div>
+                    </div>
+                    <div class="apple-tv-card-title">
+                        YT Music
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="body">
+    <div class="grid">
+        <div class="item">
+            <div class="item-content">
+                <div class="apple-tv-card-container">
+                    <div class="apple-tv-card">
+                        <a class="content"
+                           style="background-image:radial-gradient(circle at 80% 10%, #d15da2, #723e8c 70%);"></a>
+                        <div class="parallax-content">
+                            <div style="text-align:center;color:white;">
+                                <div style="font-size:.65em;line-height:1;">
+                                    TV Shows
+                                </div>
+                                <div style="font-size:.3em;">
+                                    iTunes
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="apple-tv-card-title">
+                        TV Shows
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-content">
+                <div class="apple-tv-card-container">
+                    <div class="apple-tv-card">
+                        <a class="content" style="background:linear-gradient(to bottom, #2fa6fa, #1c236d)"></a>
+                        <div class="parallax-content"
+                             style="background:url(Appstore.png) no-repeat center center;background-size:50% auto;"></div>
+                    </div>
+                    <div class="apple-tv-card-title">
+                        App store
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-content">
+                <div class="apple-tv-card-container">
+                    <div class="apple-tv-card">
+                        <a href="https://www.spotify.com/" class="content" target="_blank"
+                           style="background:linear-gradient(to bottom, #21ca5b, #52ad52)"></a>
+                        <div class="parallax-content">
+                            <i class="fab fa-spotify fa-lg"></i>
+                        </div>
+                    </div>
+                    <div class="apple-tv-card-title">
+                        Spotify
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-content">
+                <div class="apple-tv-card-container">
+                    <div class="apple-tv-card">
+                        <a class="content" style="background:linear-gradient(to bottom, #f89a1e, #fe6832)"></a>
+                        <div class="parallax-content">
+                            <i class="fa-solid fa-laptop"></i>
+                        </div>
+                    </div>
+                    <div class="apple-tv-card-title">
+                        Computer
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-content">
+                <div class="apple-tv-card-container">
+                    <div class="apple-tv-card with-shadow">
+                        <a class="content" style="background:linear-gradient(to bottom, #ccc, #888)">
+                            <div style="height:1.5em;width:1.5em;background:#555656;border-radius:100%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);"></div>
+                        </a>
+                        <div class="parallax-content reverse">
+                            <div style="position:relative;color:#b4b6b8;">
+                                <div style="height:1.25em;width:1.25em;border:.1em solid currentColor;border-radius:100%;"></div>
+                                <div style="position:absolute;right:.05em;height:.075em;background:currentColor;left:50%;top:50%;margin-top:-.05em;"></div>
+                                <div style="position:absolute;right:.05em;height:.075em;background:currentColor;left:50%;top:50%;margin-top:-.05em;transform-origin:0 50%;transform:rotate(-120deg);"></div>
+                                <div style="position:absolute;right:.05em;height:.075em;background:currentColor;left:50%;top:50%;margin-top:-.05em;transform-origin:0 50%;transform:rotate(-240deg);"></div>
+                                <div style="position:absolute;height:.05em;width:.05em;background:#555656;left:50%;top:50%;margin-top:-.025em;margin-left:-.025em;border-radius:100%;"></div>
+                            </div>
+                        </div>
+                        <div class="parallax-content reverse">
+                            <div style="height:.8em;width:.8em;border:.1em solid #b4b6b8;border-radius:100%;"></div>
+                        </div>
+                    </div>
+                    <div class="apple-tv-card-title">
+                        Settings
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="app.js" type="text/javascript"></script>
+</body>
+</html>
